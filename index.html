@@ -151,6 +151,9 @@
         }
         </script>
 
+        <!-- Google AdSense Script -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+        
         <!-- Cookie Consent Styles -->
         <style>
             .cookie-consent {
@@ -236,6 +239,11 @@
                 .cookie-buttons {
                     justify-content: center;
                 }
+            }
+            .cookie-option.advertising {
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding-top: 0.5rem;
+                margin-top: 0.5rem;
             }
         </style>
     </head>
@@ -1015,7 +1023,7 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        <span class="text-light">Designed By<a href="https://htmlcodex.com" class="text-secondary">Masika</span>
+                        <span class="text-light">Designed By <a href="https://www.linkedin.com/in/eugine-masika-0878071b4/" target="_blank" rel="noopener noreferrer" class="text-secondary">Masika</a></span>
                     </div>
                 </div>
             </div>
@@ -1056,7 +1064,7 @@
         <div id="cookieConsent" class="cookie-consent">
             <div class="cookie-content">
                 <div class="cookie-text">
-                    <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. 
+                    <p>We use cookies to enhance your browsing experience, serve personalized content and ads, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. 
                     <a href="privacy-policy.html" style="color: #0dcaf0; text-decoration: underline;">Read our Privacy Policy</a></p>
                     <div id="cookieSettings" class="cookie-settings">
                         <div class="cookie-option">
@@ -1070,6 +1078,11 @@
                         <div class="cookie-option">
                             <input type="checkbox" id="marketingCookies">
                             <label for="marketingCookies">Marketing Cookies</label>
+                        </div>
+                        <div class="cookie-option advertising">
+                            <input type="checkbox" id="advertisingCookies">
+                            <label for="advertisingCookies">Advertising Cookies (Google AdSense)</label>
+                            <p style="font-size: 0.8rem; margin-top: 0.25rem; color: #aaa;">Used to deliver personalized advertisements and measure their effectiveness.</p>
                         </div>
                     </div>
                 </div>
@@ -1100,12 +1113,14 @@
             function acceptCookies() {
                 const analytics = document.getElementById('analyticsCookies').checked;
                 const marketing = document.getElementById('marketingCookies').checked;
+                const advertising = document.getElementById('advertisingCookies').checked;
                 
                 // Save preferences
                 localStorage.setItem('cookieConsent', JSON.stringify({
                     necessary: true,
                     analytics: analytics,
                     marketing: marketing,
+                    advertising: advertising,
                     date: new Date().toISOString()
                 }));
 
@@ -1123,11 +1138,57 @@
                     // Add your marketing cookies initialization code here
                     console.log('Marketing cookies accepted');
                 }
+
+                // Initialize advertising if accepted
+                if (advertising) {
+                    // Enable Google AdSense
+                    enableGoogleAds();
+                }
             }
 
-            // Check consent on page load
-            document.addEventListener('DOMContentLoaded', checkCookieConsent);
+            // Function to enable Google Ads
+            function enableGoogleAds() {
+                // Check if adsbygoogle is defined
+                if (typeof adsbygoogle !== 'undefined') {
+                    // Push ads to Google AdSense
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    console.log('Advertising cookies accepted - Google Ads enabled');
+                }
+            }
+
+            // Check existing consent and initialize ads if previously accepted
+            document.addEventListener('DOMContentLoaded', function() {
+                const consent = localStorage.getItem('cookieConsent');
+                if (consent) {
+                    const preferences = JSON.parse(consent);
+                    if (preferences.advertising) {
+                        enableGoogleAds();
+                    }
+                }
+            });
         </script>
+
+        <!-- Add Ad Units -->
+        <div class="container my-4">
+            <!-- Ad Unit 1 -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+
+        <!-- Add another ad unit before the footer -->
+        <div class="container my-4">
+            <!-- Ad Unit 2 -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID_2"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
     </body>
 
 </html>
