@@ -82,6 +82,34 @@
 
         <!-- Carousel Start -->
         <div class="container-fluid px-0" style="height: 100vh;">
+            <style>
+                @media (max-width: 768px) {
+                    .container-fluid.px-0 {
+                        height: 50vh !important;
+                    }
+                    .carousel-caption h1 {
+                        font-size: 2rem !important;
+                        margin-bottom: 0.5rem !important;
+                    }
+                    .carousel-content {
+                        padding: 0 15px;
+                    }
+                }
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    .container-fluid.px-0 {
+                        height: 70vh !important;
+                    }
+                    .carousel-caption h1 {
+                        font-size: 3rem !important;
+                    }
+                }
+                .carousel-item {
+                    height: 100%;
+                }
+                .carousel-item img {
+                    object-position: center;
+                }
+            </style>
             <div id="carouselId" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="3000">
                 <style>
                     .carousel-caption {
@@ -169,7 +197,7 @@
                     <div class="carousel-item h-100">
                         <img src="img/carousel7.jpeg" class="img-fluid h-100" alt="Seventh slide" style="width: 100%; object-fit: cover;">
                         <div class="carousel-caption">
-                           
+                            
                         </div>
                     </div>
                     <div class="carousel-item h-100">
