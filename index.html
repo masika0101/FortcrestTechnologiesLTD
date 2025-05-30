@@ -115,6 +115,7 @@
                     <li data-bs-target="#carouselId" data-bs-slide-to="6" aria-label="Seventh slide"></li>
                     <li data-bs-target="#carouselId" data-bs-slide-to="7" aria-label="Eighth slide"></li>
                     <li data-bs-target="#carouselId" data-bs-slide-to="8" aria-label="Ninth slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="9" aria-label="Tenth slide"></li>
                 </ol>
                 <div class="carousel-inner h-100" role="listbox">
                     <div class="carousel-item active h-100">
@@ -145,7 +146,7 @@
                         <img src="img/carousel4.jpeg" class="img-fluid h-100" alt="Fourth slide" style="width: 100%; object-fit: cover;">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
-                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Professional IT Infrastructure Services</h1>
+                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Microsoft 365</h1>
                             </div>
                         </div>
                     </div>
@@ -153,7 +154,7 @@
                         <img src="img/carousel5.jpeg" class="img-fluid h-100" alt="Fifth slide" style="width: 100%; object-fit: cover;">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
-                                <h1 class="text-white display-1 mb-4 animated fadeInRight">Your Trusted Technology Partner</h1>
+                                <h1 class="text-white display-1 mb-4 animated fadeInRight">Sophos Firewall</h1>
                             </div>
                         </div>
                     </div>
@@ -161,7 +162,7 @@
                         <img src="img/carousel6.jpeg" class="img-fluid h-100" alt="Sixth slide" style="width: 100%; object-fit: cover;">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
-                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Advanced Network Solutions</h1>
+                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">ESET</h1>
                             </div>
                         </div>
                     </div>
@@ -175,7 +176,7 @@
                         <img src="img/carousel8.jpeg" class="img-fluid h-100" alt="Eighth slide" style="width: 100%; object-fit: cover;">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
-                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Professional IT Support</h1>
+                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Networking</h1>
                             </div>
                         </div>
                     </div>
@@ -183,8 +184,14 @@
                         <img src="img/carousel9.jpeg" class="img-fluid h-100" alt="Ninth slide" style="width: 100%; object-fit: cover;">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
-                                <h1 class="text-white display-1 mb-4 animated fadeInRight">Innovative Technology Solutions</h1>
+                                <h1 class="text-white display-1 mb-4 animated fadeInRight">Ip office</h1>
                             </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="img/carousel10.jpeg" class="img-fluid h-100" alt="Tenth slide" style="width: 100%; object-fit: cover;">
+                        <div class="carousel-caption">
+                            
                         </div>
                     </div>
                 </div>
@@ -319,6 +326,22 @@
 
         <!-- Project Start -->
         <div class="container-fluid project py-5 mb-5" id="services">
+            <style>
+                .project-img {
+                    overflow: hidden;
+                    transition: all 0.3s ease;
+                }
+                .project-img img {
+                    transition: all 0.3s ease;
+                }
+                .project-img:hover img {
+                    transform: scale(1.1);
+                }
+                .project-item:hover {
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                    transition: all 0.3s ease;
+                }
+            </style>
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                     
@@ -326,81 +349,68 @@
                 </div>
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="img/project-1.jpg" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Hardware.</h4>
-                                        <p class="m-0 text-white">Desktops,Laptops,Tablets, UPS, Accessories,Room schedulers, Printers.</p>
-                                    </a>
-                                </div>
+                        <div class="project-item bg-light rounded p-3">
+                            <div class="project-img mb-3">
+                                <img src="img/project-1.jpg" class="img-fluid w-100 rounded" alt="" style="cursor: pointer;">
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-secondary mb-2">Hardware</h4>
+                                <p class="m-0 text-dark">Desktops, Laptops, Tablets, UPS, Accessories, Room schedulers, Printers.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="img/project-2.jpg" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Networking</h4>
-                                        <p class="m-0 text-white">Routers, Switches, Structured cabling, UCM,  PaBX solutions.</p>
-                                    </a>
-                                </div>
+                        <div class="project-item bg-light rounded p-3">
+                            <div class="project-img mb-3">
+                                <img src="img/project-2.jpg" class="img-fluid w-100 rounded" alt="" style="cursor: pointer;">
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-secondary mb-2">Networking</h4>
+                                <p class="m-0 text-dark">Routers, Switches, Structured cabling, UCM, PaBX solutions.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="img/project-3.jpg" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Enterprise</h4>
-                                        <p class="m-0 text-white">Servers, Storage, Virtual solutions, Enterprise OS solutions.</p>
-                                           
-                                    </a>
-                                </div>
+                        <div class="project-item bg-light rounded p-3">
+                            <div class="project-img mb-3">
+                                <img src="img/project-3.jpg" class="img-fluid w-100 rounded" alt="" style="cursor: pointer;">
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-secondary mb-2">Enterprise</h4>
+                                <p class="m-0 text-dark">Servers, Storage, Virtual solutions, Enterprise OS solutions.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Cyber Security</h4>
-                                        <p class="m-0 text-white">Endpoint antivirus, Data loss prevention, NextGen Firewall, Penetration Testing, SSLs.</p>
-                                    </a>
-                                </div>
+                        <div class="project-item bg-light rounded p-3">
+                            <div class="project-img mb-3">
+                                <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="" style="cursor: pointer;">
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-secondary mb-2">Cyber Security</h4>
+                                <p class="m-0 text-dark">Endpoint antivirus, Data loss prevention, NextGen Firewall, Penetration Testing, SSLs.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Microsoft License</h4>
-                                        <p class="m-0 text-white">Microsoft License</p>
-                                    </a>
-                                </div>
+                        <div class="project-item bg-light rounded p-3">
+                            <div class="project-img mb-3">
+                                <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="" style="cursor: pointer;">
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-secondary mb-2">Microsoft License</h4>
+                                <p class="m-0 text-dark">Microsoft License</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Other</h4>
-                                        <p class="m-0 text-white">Product Support and Training , Preventive maintenance.</p>
-                                    </a>
-                                </div>
+                        <div class="project-item bg-light rounded p-3">
+                            <div class="project-img mb-3">
+                                <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt="" style="cursor: pointer;">
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-secondary mb-2">Other</h4>
+                                <p class="m-0 text-dark">Product Support and Training, Preventive maintenance.</p>
                             </div>
                         </div>
                     </div>
