@@ -3,35 +3,307 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Fortcrest Technologies Limited</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <title>Fortcrest Technologies Limited | Cybersecurity & IT Solutions in Kenya</title>
+        
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Fortcrest Technologies Limited | Cybersecurity & IT Solutions in Kenya">
+        <meta name="description" content="Leading provider of cybersecurity solutions, IT infrastructure, and systems integration in Kenya. Expert services in network security, Microsoft 365, Sophos Firewall, and enterprise solutions.">
+        <meta name="keywords" content="cybersecurity Kenya, IT solutions Nairobi, network security, Microsoft 365, Sophos Firewall, enterprise solutions, systems integration, IT infrastructure, Fortcrest Technologies">
+        <meta name="author" content="Fortcrest Technologies Limited">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        <meta name="revisit-after" content="7 days">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://fortcrestechnologies.co.ke/">
+        <meta property="og:title" content="Fortcrest Technologies Limited | Cybersecurity & IT Solutions in Kenya">
+        <meta property="og:description" content="Leading provider of cybersecurity solutions, IT infrastructure, and systems integration in Kenya. Expert services in network security, Microsoft 365, Sophos Firewall, and enterprise solutions.">
+        <meta property="og:image" content="https://fortcrestechnologies.co.ke/img/logo.png">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://fortcrestechnologies.co.ke/">
+        <meta property="twitter:title" content="Fortcrest Technologies Limited | Cybersecurity & IT Solutions in Kenya">
+        <meta property="twitter:description" content="Leading provider of cybersecurity solutions, IT infrastructure, and systems integration in Kenya. Expert services in network security, Microsoft 365, Sophos Firewall, and enterprise solutions.">
+        <meta property="twitter:image" content="https://fortcrestechnologies.co.ke/img/logo.png">
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://fortcrestechnologies.co.ke/">
+
+        <!-- Preload critical assets -->
+        <link rel="preload" href="css/bootstrap.min.css" as="style">
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="preload" href="img/logo.png" as="image">
+        
+        <!-- Preconnect to external domains -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
-
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-        <!-- Customized Bootstrap Stylesheet -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+        
+        <!-- Critical CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        
+        <!-- Defer non-critical CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="lib/animate/animate.min.css" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css" media="print" onload="this.media='all'">
+        
+        <!-- Optimize font loading -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        
+        <!-- Add browser caching meta tags -->
+        <meta http-equiv="Cache-Control" content="max-age=31536000">
+        <meta http-equiv="Expires" content="31536000">
+        
+        <!-- Add resource hints -->
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+        
+        <!-- Add async loading for non-critical scripts -->
+        <script>
+            // Function to load non-critical resources
+            function loadDeferredStyles() {
+                var addStylesNode = document.getElementById("deferred-styles");
+                var replacement = document.createElement("div");
+                replacement.innerHTML = addStylesNode.textContent;
+                document.body.appendChild(replacement);
+                addStylesNode.parentElement.removeChild(addStylesNode);
+            }
+            
+            // Load deferred styles after page load
+            var raf = window.requestAnimationFrame || mozRequestAnimationFrame ||
+                webkitRequestAnimationFrame || msRequestAnimationFrame;
+            if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+            else window.addEventListener('load', loadDeferredStyles);
+        </script>
+
+        <!-- Structured Data for Organization -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Fortcrest Technologies Limited",
+            "url": "https://fortcrestechnologies.co.ke",
+            "logo": "https://fortcrestechnologies.co.ke/img/logo.png",
+            "description": "Leading provider of cybersecurity solutions, IT infrastructure, and systems integration in Kenya.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Westlands Square",
+                "addressLocality": "Nairobi",
+                "postalCode": "00200",
+                "addressCountry": "KE"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+254-721-928-017",
+                "contactType": "customer service",
+                "email": "Info@fortcrestechnologies.co.ke",
+                "areaServed": "KE",
+                "availableLanguage": ["English", "Swahili"]
+            },
+            "sameAs": [
+                "https://www.facebook.com/fortcresttechnologies",
+                "https://www.linkedin.com/company/fortcrest-technologies",
+                "https://twitter.com/fortcresttech"
+            ]
+        }
+        </script>
+
+        <!-- Structured Data for Local Business -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Fortcrest Technologies Limited",
+            "image": "https://fortcrestechnologies.co.ke/img/logo.png",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Westlands Square",
+                "addressLocality": "Nairobi",
+                "postalCode": "00200",
+                "addressCountry": "KE"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "-1.263680",
+                "longitude": "36.802181"
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "17:00"
+            }
+        }
+        </script>
+
+        <!-- Cookie Consent Styles -->
+        <style>
+            .cookie-consent {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(15, 23, 43, 0.95);
+                color: white;
+                padding: 1rem;
+                z-index: 9999;
+                display: none;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            }
+            .cookie-consent.show {
+                display: block;
+            }
+            .cookie-content {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            .cookie-text {
+                flex: 1;
+                min-width: 300px;
+            }
+            .cookie-buttons {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            .cookie-btn {
+                padding: 0.5rem 1.5rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: 500;
+                transition: all 0.3s ease;
+            }
+            .cookie-btn.accept {
+                background: #0d6efd;
+                color: white;
+            }
+            .cookie-btn.accept:hover {
+                background: #0b5ed7;
+            }
+            .cookie-btn.settings {
+                background: transparent;
+                border: 1px solid #0d6efd;
+                color: #0d6efd;
+            }
+            .cookie-btn.settings:hover {
+                background: rgba(13, 110, 253, 0.1);
+            }
+            .cookie-settings {
+                display: none;
+                margin-top: 1rem;
+                padding-top: 1rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .cookie-settings.show {
+                display: block;
+            }
+            .cookie-option {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+            .cookie-option input[type="checkbox"] {
+                width: 18px;
+                height: 18px;
+            }
+            @media (max-width: 768px) {
+                .cookie-content {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .cookie-buttons {
+                    justify-content: center;
+                }
+            }
+        </style>
     </head>
 
     <body>
         <!-- Spinner Start -->
-        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" role="status"></div>
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" style="background: rgba(0, 0, 0, 0.9); z-index: 9999;">
+            <div class="spinner-container">
+                <style>
+                    .spinner-container {
+                        position: relative;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    .cyber-spinner {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border: 4px solid transparent;
+                        border-top-color: #0F172B;
+                        border-radius: 50%;
+                        animation: spin 1s linear infinite;
+                    }
+                    .cyber-spinner::before,
+                    .cyber-spinner::after {
+                        content: '';
+                        position: absolute;
+                        border: 4px solid transparent;
+                        border-radius: 50%;
+                    }
+                    .cyber-spinner::before {
+                        top: 5px;
+                        left: 5px;
+                        right: 5px;
+                        bottom: 5px;
+                        border-top-color: #0d6efd;
+                        animation: spin 2s linear infinite;
+                    }
+                    .cyber-spinner::after {
+                        top: 15px;
+                        left: 15px;
+                        right: 15px;
+                        bottom: 15px;
+                        border-top-color: #0dcaf0;
+                        animation: spin 3s linear infinite;
+                    }
+                    .spinner-logo {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 40px;
+                        height: 40px;
+                        animation: pulse 2s ease-in-out infinite;
+                    }
+                    @keyframes spin {
+                        0% { transform: rotate(0deg); }
+                        100% { transform: rotate(360deg); }
+                    }
+                    @keyframes pulse {
+                        0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+                        50% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.7; }
+                        100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+                    }
+                </style>
+                <div class="cyber-spinner"></div>
+                <img src="img/logo.png" alt="Fortcrest Technologies Limited Logo - Cybersecurity Solutions Provider" class="spinner-logo">
+            </div>
         </div>
         <!-- Spinner End -->
 
@@ -43,7 +315,7 @@
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                     <a href="index.html" class="navbar-brand">
-                        <img src="img/logo.png" alt="logo" class="img-fluid" style="height: 80px; width: auto;">
+                        <img src="img/logo.png" alt="logo" class="img-fluid" style="height: 80px; width: auto;" loading="lazy">
                         
                     </a>
                     <h1 style="font-size: 10px; color: white;">Dream, Design, Own </h1>
@@ -116,7 +388,7 @@
                     object-position: center;
                 }
             </style>
-            <div id="carouselId" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="3000">
+            <div id="carouselId" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
                 <style>
                     .carousel-caption {
                         background: none !important;
@@ -138,6 +410,16 @@
                     .carousel-item {
                         background: none !important;
                     }
+                    .carousel-item {
+                        will-change: transform;
+                        backface-visibility: hidden;
+                        transform: translateZ(0);
+                    }
+                    .carousel-item img {
+                        will-change: transform;
+                        backface-visibility: hidden;
+                        transform: translateZ(0);
+                    }
                 </style>
                 <ol class="carousel-indicators">
                     <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
@@ -153,7 +435,7 @@
                 </ol>
                 <div class="carousel-inner h-100" role="listbox">
                     <div class="carousel-item active h-100">
-                        <img src="img/HERO.png" class="img-fluid h-100" alt="First slide" style="width: 100%; object-fit: cover;">
+                        <img src="img/HERO.png" class="img-fluid h-100" alt="First slide" style="width: 100%; object-fit: cover;" loading="lazy">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
                                 <h1 class="text-white display-1 mb-4 animated fadeInRight"> Dream,Design,Own</h1>
@@ -161,7 +443,7 @@
                         </div>
                     </div>
                     <div class="carousel-item h-100">
-                        <img src="img/carousel-2.jpg" class="img-fluid h-100" alt="Second slide" style="width: 100%; object-fit: cover;">
+                        <img src="img/carousel-2.jpg" class="img-fluid h-100" alt="Second slide" style="width: 100%; object-fit: cover;" loading="lazy">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
                                 <h1 class="text-white display-1 mb-4 animated fadeInLeft">Quality Services You can rely on!</h1>
@@ -629,9 +911,9 @@
                                 <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
                                     <i class="fas fa-map-marker-alt text-white"></i>
                                 </div>
-                                <div class="ms-3">
+                                <div class="ms-3" style="word-break: break-word; max-width: calc(100% - 64px);">
                                     <h4 class="text-primary">Address</h4>
-                                    <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">P. o Box 72725-00200 Westlands Square Nairobi,</a>
+                                    <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5 text-decoration-none" style="font-size: 0.9rem; line-height: 1.4;">P. o Box 72725-00200 Westlands Square Nairobi,</a>
                                 </div>
                             </div>
                         </div>
@@ -640,9 +922,9 @@
                                 <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
                                     <i class="fa fa-phone text-white"></i>
                                 </div>
-                                <div class="ms-3">
+                                <div class="ms-3" style="word-break: break-word; max-width: calc(100% - 64px);">
                                     <h4 class="text-primary">Call Us</h4>
-                                    <a class="h5" href="tel:+0123456789" target="_blank">+254 7219280170</a>
+                                    <a class="h5 text-decoration-none" href="tel:+2547219280170" target="_blank" style="font-size: 0.9rem; line-height: 1.4;">+254 7219280170</a>
                                 </div>
                             </div>
                         </div>
@@ -651,9 +933,9 @@
                                 <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
                                     <i class="fa fa-envelope text-white"></i>
                                 </div>
-                                <div class="ms-3">
+                                <div class="ms-3" style="word-break: break-word; max-width: calc(100% - 64px);">
                                     <h4 class="text-primary">Email Us</h4>
-                                    <a class="h5" href="mailto:Info@fortcrestechnologies.co.ke" target="_blank">Info@fortcrestechnologIes.co.ke</a>
+                                    <a class="h5 text-decoration-none" href="mailto:Info@fortcrestechnologies.co.ke" target="_blank" style="font-size: 0.9rem; line-height: 1.4;">Info@fortcrestechnologIes.co.ke</a>
                                 </div>
                             </div>
                         </div>
@@ -696,7 +978,7 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <a href="index.html">
-                            <img src="img/logo.png" alt="logo" class="img-fluid" style="height: 80px; width: auto;">
+                            <img src="img/logo.png" alt="logo" class="img-fluid" style="height: 80px; width: auto;" loading="lazy">
                         </a>
                         
                         <div class="d-flex hightech-link">
@@ -720,9 +1002,9 @@
                     <div class="col-lg-3 col-md-6">
                         <a href="#" class="h3 text-secondary">Contact Us</a>
                         <div class="text-white mt-4 d-flex flex-column contact-link">
-                            <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Westlands square, Nairobi</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +254 7219280170</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> info@fortcrestechnologIes.co.ke</a>
+                            <a href="#" class="pb-3 text-light border-bottom border-primary" style="word-break: break-word; font-size: 0.9rem; line-height: 1.4;"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Westlands square, Nairobi</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary" style="word-break: break-word; font-size: 0.9rem; line-height: 1.4;"><i class="fas fa-phone-alt text-secondary me-2"></i> +254 7219280170</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary" style="word-break: break-word; font-size: 0.9rem; line-height: 1.4;"><i class="fas fa-envelope text-secondary me-2"></i> info@fortcrestechnologIes.co.ke</a>
                         </div>
                     </div>
                 </div>
@@ -746,16 +1028,106 @@
 
         
         <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
+        <script src="lib/wow/wow.min.js" defer></script>
+        <script src="lib/easing/easing.min.js" defer></script>
+        <script src="lib/waypoints/waypoints.min.js" defer></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
         <script src='https://cdn.jotfor.ms/agent/embedjs/0196f85a4bfb7466958a296ac27aea528f60/embed.js?skipWelcome=1&maximizable=1'></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="js/main.js" defer></script>
+
+        <!-- Add service worker for caching -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    }, function(err) {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+                });
+            }
+        </script>
+
+        <!-- Cookie Consent Banner -->
+        <div id="cookieConsent" class="cookie-consent">
+            <div class="cookie-content">
+                <div class="cookie-text">
+                    <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. 
+                    <a href="privacy-policy.html" style="color: #0dcaf0; text-decoration: underline;">Read our Privacy Policy</a></p>
+                    <div id="cookieSettings" class="cookie-settings">
+                        <div class="cookie-option">
+                            <input type="checkbox" id="necessaryCookies" checked disabled>
+                            <label for="necessaryCookies">Necessary Cookies (Required)</label>
+                        </div>
+                        <div class="cookie-option">
+                            <input type="checkbox" id="analyticsCookies">
+                            <label for="analyticsCookies">Analytics Cookies</label>
+                        </div>
+                        <div class="cookie-option">
+                            <input type="checkbox" id="marketingCookies">
+                            <label for="marketingCookies">Marketing Cookies</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="cookie-buttons">
+                    <button class="cookie-btn settings" onclick="toggleCookieSettings()">Cookie Settings</button>
+                    <button class="cookie-btn accept" onclick="acceptCookies()">Accept All</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookie Consent Script -->
+        <script>
+            // Check if user has already made a choice
+            function checkCookieConsent() {
+                const consent = localStorage.getItem('cookieConsent');
+                if (!consent) {
+                    document.getElementById('cookieConsent').classList.add('show');
+                }
+            }
+
+            // Toggle cookie settings
+            function toggleCookieSettings() {
+                const settings = document.getElementById('cookieSettings');
+                settings.classList.toggle('show');
+            }
+
+            // Accept cookies
+            function acceptCookies() {
+                const analytics = document.getElementById('analyticsCookies').checked;
+                const marketing = document.getElementById('marketingCookies').checked;
+                
+                // Save preferences
+                localStorage.setItem('cookieConsent', JSON.stringify({
+                    necessary: true,
+                    analytics: analytics,
+                    marketing: marketing,
+                    date: new Date().toISOString()
+                }));
+
+                // Hide banner
+                document.getElementById('cookieConsent').classList.remove('show');
+
+                // Initialize analytics if accepted
+                if (analytics) {
+                    // Add your analytics initialization code here
+                    console.log('Analytics cookies accepted');
+                }
+
+                // Initialize marketing if accepted
+                if (marketing) {
+                    // Add your marketing cookies initialization code here
+                    console.log('Marketing cookies accepted');
+                }
+            }
+
+            // Check consent on page load
+            document.addEventListener('DOMContentLoaded', checkCookieConsent);
+        </script>
     </body>
 
 </html>
